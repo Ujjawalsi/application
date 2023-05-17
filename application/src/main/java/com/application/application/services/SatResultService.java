@@ -10,7 +10,11 @@ public interface SatResultService {
 
     SatResultDto updateResult(SatResultDto satResultDto, String name);
 
-    List<SatResultDto> getAllResults();
+    SatResultDto getResult(String name);
+
+    List<SatResultDto> getAllResults(Integer pageNumber, Integer pageSize, String sortBy, String sortDir);
 
     void deleteResult(String name);
+
+    long getRank(String name);
 }

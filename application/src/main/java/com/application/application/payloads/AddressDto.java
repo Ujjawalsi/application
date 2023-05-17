@@ -12,7 +12,6 @@ import lombok.Setter;
 @AllArgsConstructor
 public class AddressDto {
 
-    private long id ;
     @NotEmpty(message = "City field never be empty")
     private String city;
     @NotEmpty(message = "Country filed never be empty")
